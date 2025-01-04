@@ -1,0 +1,17 @@
+-1 first we search for vpc in aws account
+-2 then go to the create vpc  put name of vpc
+   then ipv4:cidr 
+        192.168.0.0/16
+-3 then going to subnet and creating subnet for that vpc
+-4 put any name to subnet ,availablty zone select
+-5 by default 192.168.0.0/16 
+-6 we have to create cidr block (192.168.1.0/24)
+-7 then again go to the subnet and edit subnet
+-8 enable auto-assign public ipv4 addres
+-9 then go to the route table create a route table
+10- edit route table before that we are going to internet
+   gateway create gateway and attached to the vpc which is we 
+   create a new
+-11 then go to the route table edit route put
+    0.0.0.0/0 select the internet gateway and attached with route 
+     table
