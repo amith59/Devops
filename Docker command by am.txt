@@ -1,0 +1,29 @@
+
+
+
+
+1- docker ps -a
+
+2-  docker ps -a |grep Exited
+   to stop the conatiner 
+  docker stop containerid
+  docker rm -f 40b6b026cfa9 to delete the running conatiner
+
+     delete all container at a time
+commands
+3- docker rm -f $(docker ps -aq)
+4- docker container prune
+5- docker system prune
+  docker rmi -f containerid
+
+  login to running containers commnads
+  docker exec -it nginx bin/bash
+ container-id or container name
+  docker exec -it reverent_mclean  /bin/bash
+
+
+docker run -dt -p 81:80 nginx
+
+
+docker run -dt jenkins/jenkins
+docker run -dt -p 8081:8080  jenkins/jenkins
