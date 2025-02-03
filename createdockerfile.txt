@@ -1,0 +1,23 @@
+Dockerfile ----------
+FROM ubuntu
+RUN echo "this is docker ">/tmp/testfile
+
+---------------------------------------------------------------------------------
+create a image from Dockerfile
+docker build -t myimg .
+
+docker run -it --name testcn myimg  /bin/bash
+
+
+
+--------------------------------------------------
+tar -cvf test.tar test
+gzip test
+
+---------------------------------------------------------------
+FROM ubuntu
+WORKDIR /tmp
+RUN echo "hhi amith"> /tmp/testfile
+ENV myname AMITH
+COPY one /tmp
+ADD test.tar.gz /tmp
