@@ -1,0 +1,25 @@
+within linux we install ubuntu like this
+-1 docker run -td --name akashy -p 81:80 ubuntu
+
+-2 docker exec -it akashy /bin/bash
+
+
+
+
+
+to install website within the container
+-1 apt-get update
+-2 apt-get install apache2
+-3 apt-get install vim
+-4 cd /var/www/html
+-5 service apache2 restart
+
+
+
+--------------------------------------------------------------------------------
+for installing tomcat in container
+/usr/local/tomcat/webapps.dist# cp -R * ../webapps/
+
+
+
+find / -name context.xml
