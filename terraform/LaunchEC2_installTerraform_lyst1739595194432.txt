@@ -1,0 +1,24 @@
+ Terraform Installation on EC2 instance
+
+1. Create EC2 instance(Amazon linux2 , Ubuntu, Redhat)
+
+2. After launch an EC2 Instance
+
+3. Connect to EC2 instance
+
+4. Switch to root user
+   [ec2-user@ip-172-31-82-123 ~]$ sudo su
+
+
+5. Download Terraform software from the following url:
+	https://www.terraform.io/downloads
+
+
+6.
+	$ sudo yum install -y yum-utils shadow-utils
+	$ sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+	$ sudo yum -y install terraform
+7. check the terraform version
+	[root@ip-172-31-82-123 ec2-user]# terraform -v
+	Terraform v1.3.9
+	on linux_amd64
